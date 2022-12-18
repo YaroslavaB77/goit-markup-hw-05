@@ -30,7 +30,6 @@
             <li>
               <a class="current-page" href="portfolio.html">Portfolio</a>
             </li>
-
             <li class="active-underline"></li>
             <li><a class="contact-page" href="/kontakt">Kontakt</a></li>
           </ul>
@@ -57,11 +56,7 @@
           EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
         </h1>
         <button data-modal-open type="button">Zamów usługe</button>
-        <div class="modal is-hidden" data-modal>
-          <button class="close-button" data-modal-close>X</button>
-        </div>
       </section>
-
       <section class="our-strengths section container">
         <ul class="list">
           <li>
@@ -152,23 +147,32 @@
       </section>
       <section class="section container">
         <h2 class="homepage-secondary-title">Czym się zajmujemy</h2>
-        <div class="what-we-do">
-          <img
-            src="images/services/img.jpg"
-            alt="kodowanie"
-            width="370"
-            height="294" />
-          <img
-            src="images/services/laptop.jpg"
-            alt="laptop"
-            width="370"
-            height="294" />
-          <img
-            src="images/services/tablet.jpg"
-            alt="tablet"
-            width="370"
-            height="294" />
-        </div>
+        <ul class="what-we-do">
+          <li>
+            <img
+              src="images/services/img.jpg"
+              alt="kodowanie"
+              width="370"
+              height="294" />
+            <div class="what-we-do-label"><h3>Aplikacje komputerowe</h3></div>
+          </li>
+          <li>
+            <img
+              src="images/services/laptop.jpg"
+              alt="laptop"
+              width="370"
+              height="294" />
+            <div class="what-we-do-label"><h3>Aplikacje mobilne</h3></div>
+          </li>
+          <li>
+            <img
+              src="images/services/tablet.jpg"
+              alt="tablet"
+              width="370"
+              height="294" />
+            <div class="what-we-do-label"><h3>Rozwiązania graficzne</h3></div>
+          </li>
+        </ul>
       </section>
       <section class="our-team-color section">
         <div class="container">
@@ -535,6 +539,11 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" data-modal-close>&#10005;</button>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
